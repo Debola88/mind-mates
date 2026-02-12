@@ -124,3 +124,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.bg-bottomcolor {
+  background: linear-gradient(to bottom, #56E0E0, #007299);
+}
+
+.bg-color {
+  background: linear-gradient(to right, #56E0E0, #007299)
+}
