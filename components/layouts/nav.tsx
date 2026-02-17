@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
+import logo from "@/assets/image/Group 169.svg";
+import Image from "next/image";
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,45 +34,46 @@ export default function NavBar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-24">
           <div className="shrink-0">
             <Link href="/" className="flex items-center">
-              <div className="w-10 h-10 bg-linear-to-br from-[#56E0E0] to-[#007299] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">L</span>
-              </div>
+              <Image src={logo} alt="" width={180} height={200} />
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 text-[#707176]">
             <Link
               href="/"
-              className="text-gray-700 hover:text-[#007299] transition-colors font-medium"
+              className="hover:text-[#007299] transition-colors font-medium"
             >
               Home
+              <span className=""/>
             </Link>
             <Link
               href="/services"
-              className="text-gray-700 hover:text-[#007299] transition-colors font-medium"
+              className="hover:text-[#007299] transition-colors font-medium"
             >
               Services
             </Link>
             <Link
               href="/contact"
-              className="text-gray-700 hover:text-[#007299] transition-colors font-medium"
+              className="hover:text-[#007299] transition-colors font-medium"
             >
               Contact
             </Link>
             <Link
               href="/about"
-              className="text-gray-700 hover:text-[#007299] transition-colors font-medium"
+              className=" hover:text-[#007299] transition-colors font-medium"
             >
               About Us
             </Link>
-            <Button className="bg-color">
-                Register
+          </div>
+          <div className="hidden md:flex">
+            <Button className="bg-color rounded-full text-lg px-8 cursor-pointer hover:opacity-85 transition-all duration-200">
+              Register
             </Button>
           </div>
-         <div className="md:hidden">
+          <div className="md:hidden">
             <Button
               type="button"
               className="text-gray-700 hover:text-[#007299] focus:outline-none"
