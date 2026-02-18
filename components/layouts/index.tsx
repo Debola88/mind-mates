@@ -9,7 +9,7 @@ const LazyFooter = React.lazy(() => import("./footer"));
 
 const LayoutWrapper: React.FC<Props> = ({children}) => {
     return (
-        <div className="">
+        <div className="bg-[#F4FEFF] min-h-screen">
             <Suspense fallback={<div className="h-16"></div>}>
                 <LazyHeader/>
             </Suspense>
