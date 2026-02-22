@@ -10,6 +10,7 @@ import Image from "next/image";
 import doctor from "@/assets/image/doctor (1) 1.svg";
 import drug from "@/assets/image/Group 67.svg";
 import hospital from "@/assets/image/View Hospitals.svg";
+import ChatCard from "./_component/chat-card";
 
 export default function HomePageView() {
   return (
@@ -118,7 +119,9 @@ export default function HomePageView() {
         </span>
       </h2>
       <div className="bg-linear-to-b from-[#D5E9F5] to-[#D4F5F5] mt-16">
-        <div className="max-w-7xl 2xl:max-w-360 mx-auto px-4 sm:px-6 lg:px-8">f</div>
+        <div className="max-w-7xl 2xl:max-w-360 mx-auto px-4 sm:px-6 lg:px-8">
+          <ChatCard />
+        </div>
       </div>
     </div>
   );
