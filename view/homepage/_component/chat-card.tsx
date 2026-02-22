@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export default function ChatCard() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12 space-x-10 gap-6 place-items-center">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12 gap-6 md:gap-10 place-items-center">
       <Card className="md:h-142.5">
         <CardContent className="lg:px-10">
           <div className="flex items-center justify-center">

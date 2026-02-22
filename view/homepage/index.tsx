@@ -11,6 +11,9 @@ import doctor from "@/assets/image/doctor (1) 1.svg";
 import drug from "@/assets/image/Group 67.svg";
 import hospital from "@/assets/image/View Hospitals.svg";
 import ChatCard from "./_component/chat-card";
+import peaceOne from "@/assets/image/image 14.svg";
+import peaceTwo from "@/assets/image/image 15.svg";
+import trust from "@/assets/image/Treatments to Manage PCOS Symptoms _ PCOS Living 1.svg";
 
 export default function HomePageView() {
   return (
@@ -65,8 +68,8 @@ export default function HomePageView() {
           Consultants are
           <br /> the Best Choice
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 space-x-10 pt-16 ">
-          <Card className="text-center bg-[#F4FEFF] border-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10 pt-16 ">
+          <Card className="text-center bg-[#F4FEFF] border-0 max-md:w-full">
             <CardContent>
               <div className=" pt-16 flex justify-center">
                 <Image src={doctor} width={200} height={355} alt="" />
@@ -81,7 +84,7 @@ export default function HomePageView() {
               </CardDescription>
             </CardContent>
           </Card>
-          <Card className="text-center bg-bottomcolor border-0 text-white">
+          <Card className="text-center bg-bottomcolor border-0 text-white max-md:w-full">
             <CardContent>
               <div className=" pt-16 flex justify-center">
                 <Image src={drug} width={200} height={355} alt="" />
@@ -95,7 +98,7 @@ export default function HomePageView() {
               </CardDescription>
             </CardContent>
           </Card>
-          <Card className="text-center bg-[#F4FEFF] border-0">
+          <Card className="text-center bg-[#F4FEFF] border-0 max-md:w-full">
             <CardContent>
               <div className=" pt-16 flex justify-center">
                 <Image src={hospital} width={200} height={355} alt="" />
@@ -121,6 +124,58 @@ export default function HomePageView() {
       <div className="bg-linear-to-b from-[#D5E9F5] to-[#D4F5F5] mt-16">
         <div className="max-w-7xl 2xl:max-w-360 mx-auto px-4 sm:px-6 lg:px-8">
           <ChatCard />
+        </div>
+      </div>
+      {/* About us */}
+      <div className="bg-white max-w-7xl 2xl:max-w-360 mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-24">
+        <h2 className="text-black font-bold text-xl text-center">About us</h2>
+        <div className="flex max-md:flex-col gap-6 items-center pt-16">
+          <div className="flex gap-4">
+            <div className="h-full ">
+              <Image
+                src={trust}
+                alt=""
+                width={250}
+                height={300}
+                className="object-contain"
+              />
+            </div>
+            <div>
+              <div className="w-full ">
+                <Image
+                  src={peaceTwo}
+                  alt=""
+                  width={235}
+                  height={250}
+                  className="object-contain"
+                />
+              </div>
+              <div className="w-full">
+                <Image
+                  src={peaceOne}
+                  alt=""
+                  width={260}
+                  height={300}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="flex-1">
+            <h2 className="text-5xl max-md:text-3xl font-bold md:leading-14">
+              Discover the Faces Behind <br /> Our{" "}
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#56E0E0] to-[#007299]">
+                Mental Health
+              </span>
+              <br /> Consultancy
+            </h2>
+            <p className="text-[#999AA1] pt-6">
+              Meet our compassionate Mates at MindMates. With expertise in
+              various fields, they&apos;re here to support you on your journey to
+              mental wellness.
+            </p>
+            <Button className="text-lg font-semibold py-6 px-8 bg-color bg-color rounded-full mt-10 cursor-pointer">Explore Experts</Button>
+          </div>
         </div>
       </div>
     </div>
