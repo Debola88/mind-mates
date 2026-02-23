@@ -17,7 +17,7 @@ import trust from "@/assets/image/Treatments to Manage PCOS Symptoms _ PCOS Livi
 
 export default function HomePageView() {
   return (
-    <div className=" ">
+    <div>
       {/* Hero Section */}
       <div className="bg-[#F4FEFF]">
         <div className="max-w-7xl 2xl:max-w-360 mx-auto px-4 sm:px-6 lg:px-8">
@@ -127,7 +127,7 @@ export default function HomePageView() {
         </div>
       </div>
       {/* About us */}
-      <div className="bg-white max-w-7xl 2xl:max-w-360 mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-24">
+      <div className="bg-white max-w-7xl 2xl:max-w-360 mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <h2 className="text-black font-bold text-xl text-center">About us</h2>
         <div className="flex max-md:flex-col gap-6 items-center pt-16">
           <div className="flex gap-4">
@@ -171,10 +171,27 @@ export default function HomePageView() {
             </h2>
             <p className="text-[#999AA1] pt-6">
               Meet our compassionate Mates at MindMates. With expertise in
-              various fields, they&apos;re here to support you on your journey to
-              mental wellness.
+              various fields, they&apos;re here to support you on your journey
+              to mental wellness.
             </p>
-            <Button className="text-lg font-semibold py-6 px-8 bg-color bg-color rounded-full mt-10 cursor-pointer">Explore Experts</Button>
+            <Button className="text-lg font-semibold py-6 px-8 bg-color bg-color rounded-full mt-10 cursor-pointer">
+              Explore Experts
+            </Button>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#F4FEFF]">
+        <div className="max-w-7xl 2xl:max-w-360 mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+          <h2 className="text-5xl max-md:text-3xl text-center md:leading-14 font-bold">
+            Community{" "}
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-[#56E0E0] to-[#007299]">
+              Anonymous<br/> Posts
+            </span>
+          </h2>
+          <div>
+            <div>
+
+            </div>
           </div>
         </div>
       </div>
