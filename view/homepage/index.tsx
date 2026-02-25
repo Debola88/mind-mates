@@ -14,6 +14,8 @@ import ChatCard from "./_component/chat-card";
 import peaceOne from "@/assets/image/image 14.svg";
 import peaceTwo from "@/assets/image/image 15.svg";
 import trust from "@/assets/image/Treatments to Manage PCOS Symptoms _ PCOS Living 1.svg";
+import wave from "@/assets/image/Ellipse 21 (2).svg";
+import AnonymousPostCard from "./_component/anonymous-post";
 
 export default function HomePageView() {
   return (
@@ -185,13 +187,12 @@ export default function HomePageView() {
           <h2 className="text-5xl max-md:text-3xl text-center md:leading-14 font-bold">
             Community{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-[#56E0E0] to-[#007299]">
-              Anonymous<br/> Posts
+              Anonymous
+              <br /> Posts
             </span>
           </h2>
           <div>
-            <div>
-
-            </div>
+            <AnonymousPostCard />
           </div>
         </div>
       </div>
