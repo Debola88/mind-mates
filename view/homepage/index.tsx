@@ -15,7 +15,27 @@ import peaceOne from "@/assets/image/image 14.svg";
 import peaceTwo from "@/assets/image/image 15.svg";
 import trust from "@/assets/image/Treatments to Manage PCOS Symptoms _ PCOS Living 1.svg";
 import wave from "@/assets/image/Ellipse 21 (2).svg";
+import lady from "@/assets/image/Ellipse 22.svg";
+import guy from "@/assets/image/Ellipse 22 (1).svg";
 import AnonymousPostCard from "./_component/anonymous-post";
+
+const anonymousPosts = [
+  {
+    name: "Mystery Mind",
+    comment: "Hi, i had been suffering from depression since past few months then i came across this website, and consulted... It was a life changing experience.",
+    image: wave,
+  },
+  {
+    name: "Micky Mouse",
+    comment: "Really thankful to the MindMates! They helped me overcome my situation of anxiety, which kept me ...from living a normal life. I am now able to enjoy my life and be happy.",
+    image: lady,
+  },
+  {
+    name: "Shadow Light",
+    comment: "Few months back, I was just like a typical depressed person, but now, I’m a whole new person, with much more confidence in me, all thanks to ...MindMates. I am now able to enjoy my life and be happy.",
+    image: guy,
+  },
+];
 
 export default function HomePageView() {
   return (
@@ -191,8 +211,10 @@ export default function HomePageView() {
               <br /> Posts
             </span>
           </h2>
-          <div>
-            <AnonymousPostCard />
+          <div className="pt-10">
+            {anonymousPosts.map((post, index) => (
+              <AnonymousPostCard key={index} name={post.name} comment={post.comment} image={post.image} />
+            ))}
           </div>
         </div>
       </div>
