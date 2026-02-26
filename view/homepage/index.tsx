@@ -18,21 +18,25 @@ import wave from "@/assets/image/Ellipse 21 (2).svg";
 import lady from "@/assets/image/Ellipse 22.svg";
 import guy from "@/assets/image/Ellipse 22 (1).svg";
 import AnonymousPostCard from "./_component/anonymous-post";
+import search from "@/assets/image/Mind Mate Search.svg";
 
 const anonymousPosts = [
   {
     name: "Mystery Mind",
-    comment: "Hi, i had been suffering from depression since past few months then i came across this website, and consulted... It was a life changing experience.",
+    comment:
+      "Hi, i had been suffering from depression since past few months then i came across this website, and consulted... It was a life changing experience.",
     image: wave,
   },
   {
     name: "Micky Mouse",
-    comment: "Really thankful to the MindMates! They helped me overcome my situation of anxiety, which kept me ...from living a normal life. I am now able to enjoy my life and be happy.",
+    comment:
+      "Really thankful to the MindMates! They helped me overcome my situation of anxiety, which kept me ...from living a normal life. I am now able to enjoy my life and be happy.",
     image: lady,
   },
   {
     name: "Shadow Light",
-    comment: "Few months back, I was just like a typical depressed person, but now, I’m a whole new person, with much more confidence in me, all thanks to ...MindMates. I am now able to enjoy my life and be happy.",
+    comment:
+      "Few months back, I was just like a typical depressed person, but now, I’m a whole new person, with much more confidence in me, all thanks to ...MindMates. I am now able to enjoy my life and be happy.",
     image: guy,
   },
 ];
@@ -213,8 +217,35 @@ export default function HomePageView() {
           </h2>
           <div className="pt-10">
             {anonymousPosts.map((post, index) => (
-              <AnonymousPostCard key={index} name={post.name} comment={post.comment} image={post.image} />
+              <AnonymousPostCard
+                key={index}
+                name={post.name}
+                comment={post.comment}
+                image={post.image}
+              />
             ))}
+          </div>
+        </div>
+      </div>
+      <div className="bg-white max-w-7xl 2xl:max-w-360 mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div className="flex max-md:flex-col items-center gap-6 lg:gap-20">
+          <div className="w-auto max-w-max flex-1 ">
+            <Image
+              src={search}
+              alt=""
+              width={500}
+              height={500}
+              className="object-cover"
+            />
+          </div>
+          <div className="">
+            <h2 className="text-5xl max-md:text-3xl md:leading-14 font-bold">
+              Find Your perfect
+              <br />
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#56E0E0] to-[#007299]">
+                Mind Mate
+              </span>
+            </h2>
           </div>
         </div>
       </div>
