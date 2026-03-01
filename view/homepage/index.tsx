@@ -225,20 +225,25 @@ export default function HomePageView() {
               />
             ))}
           </div>
+          <div className="text-center pt-10">
+            <Button className="px-12 py-6
+             rounded-full  text-lg bg-color text-white cursor-pointer">View All</Button>
+          </div>
         </div>
       </div>
+      {/* next section */}
       <div className="bg-white max-w-7xl 2xl:max-w-360 mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div className="flex max-md:flex-col items-center gap-6 lg:gap-20">
-          <div className="w-auto max-w-max flex-1 ">
+        <div className="flex max-md:flex-col items-center gap-10 lg:gap-20">
+          <div className="w-full max-w-max">
             <Image
               src={search}
               alt=""
               width={500}
               height={500}
-              className="object-cover"
+              className="object-cover overflow-hidden"
             />
           </div>
-          <div className="">
+          <div className="w-full">
             <h2 className="text-5xl max-md:text-3xl md:leading-14 font-bold">
               Find Your perfect
               <br />
@@ -246,6 +251,9 @@ export default function HomePageView() {
                 Mind Mate
               </span>
             </h2>
+            <Button className="mt-10 px-6 py-6 bg-color text-lg text-white rounded-full cursor-pointer">
+              Explore Experts
+            </Button>
           </div>
         </div>
       </div>
