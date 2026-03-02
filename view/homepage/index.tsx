@@ -19,6 +19,7 @@ import lady from "@/assets/image/Ellipse 22.svg";
 import guy from "@/assets/image/Ellipse 22 (1).svg";
 import AnonymousPostCard from "./_component/anonymous-post";
 import search from "@/assets/image/Mind Mate Search.svg";
+import Faq from "./_component/faq";
 
 const anonymousPosts = [
   {
@@ -226,15 +227,19 @@ export default function HomePageView() {
             ))}
           </div>
           <div className="text-center pt-10">
-            <Button className="px-12 py-6
-             rounded-full  text-lg bg-color text-white cursor-pointer">View All</Button>
+            <Button
+              className="px-12 py-6
+             rounded-full  text-lg bg-color text-white cursor-pointer"
+            >
+              View All
+            </Button>
           </div>
         </div>
       </div>
       {/* next section */}
       <div className="bg-white max-w-7xl 2xl:max-w-360 mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="flex max-md:flex-col items-center gap-10 lg:gap-20">
-          <div className="w-full max-w-max">
+          <div className="w-full flex-1">
             <Image
               src={search}
               alt=""
@@ -243,7 +248,7 @@ export default function HomePageView() {
               className="object-cover overflow-hidden"
             />
           </div>
-          <div className="w-full">
+          <div className="w-full flex-1">
             <h2 className="text-5xl max-md:text-3xl md:leading-14 font-bold">
               Find Your perfect
               <br />
@@ -256,6 +261,10 @@ export default function HomePageView() {
             </Button>
           </div>
         </div>
+      </div>
+      {/* Faq section */}
+      <div>
+        <Faq />
       </div>
     </div>
   );
