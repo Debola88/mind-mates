@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
-import AnonymousPostCard from "./anonymous-post";
+import AnonymousPostCard from "./_component/anonymous-post";
 import wave from "@/assets/image/Ellipse 21 (2).svg";
 import lady from "@/assets/image/Ellipse 22.svg";
 import guy from "@/assets/image/Ellipse 22 (1).svg";
-import ChatCard from "./chat-card";
+import ChatCard from "./_component/chat-card";
 
 const anonymousPosts = [
   {

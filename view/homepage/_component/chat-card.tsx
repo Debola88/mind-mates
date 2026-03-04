@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 export default function ChatCard() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12 gap-6 md:gap-10 place-items-center">
-      <Card className="md:h-142.5 bg-[#F4FEFF]">
+      <Card className="md:h-142.5 bg-[#F4FEFF] w-full">
         <CardContent className="lg:px-10">
           <div className="flex items-center justify-center">
             <Image src={wellWisher} alt="" width={200} height={350} />
@@ -36,7 +36,7 @@ export default function ChatCard() {
           </CardAction>
         </CardContent>
       </Card>
-      <Card className="md:h-168 bg-[#F4FEFF]">
+      <Card className="md:h-168 bg-[#F4FEFF] w-full">
         <CardContent className="lg:px-10">
           <div className="flex items-center justify-center">
             <Image src={helpingHand} alt="" width={200} height={350} />
@@ -64,7 +64,7 @@ export default function ChatCard() {
           </CardAction>
         </CardContent>
       </Card>
-      <Card className="md:h-142.5 bg-[#F4FEFF]">
+      <Card className="md:h-142.5 bg-[#F4FEFF] w-full">
         <CardContent className="lg:px-10">
           <div className="flex items-center justify-center">
             <Image src={smiley} alt="" width={200} height={350} />
