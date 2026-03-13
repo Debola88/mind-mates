@@ -3,6 +3,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Image from "next/image";
 import peace from "@/assets/image/Positive thinking-rafiki (1) 1.svg";
+import Link from "next/link";
+
 
 export default function LoginPageView() {
   return (
@@ -56,6 +58,9 @@ export default function LoginPageView() {
                   required
                   //   disabled={loading}
                 />
+                <div className=" w-full text-right">
+                <Link href="#" className="mt-2 text-sm font-semibold text-[#02607E]">Forget password?</Link>
+                  </div>
               </div>
               <div className="mt-10 text-center">
                 <Button
@@ -66,25 +71,25 @@ export default function LoginPageView() {
                   {/* {loading ? "Loading..." : "Sign in"} */}
                   Log in
                 </Button>
-                <div className="flex justify-center mt-4 md:text-sm text-xs font-medium items-start">
-                 <div className="border border-gray-400"></div> <p className="">or continue with</p><div className="border border-gray-400"></div> 
+                <div className="flex justify-center mt-4 text-sm items-start">
+                 <div className="border border-gray-400"></div> <p className="text-[#444B59]">or continue with</p><div className="border border-gray-400"></div> 
                   </div>
                   <div className="-mt-2">
-                    <Button
-                      variant="link"
-                      type="button"
-                      className="text-[#5A8CFF] cursor-pointer"
-                      //   onClick={() => router.push(APP_LINKS.SIGNUP_HOME)}
-                    >
-                      Sign up for free
-                    </Button>
-                    {/* <Image
-                      src={curve}
-                      alt=""
-                      width={100}
-                      height={100}
-                      className="mx-auto"
-                    /> */}
+                    {/* <Button
+                    //   variant="link"
+                    //   type="button"
+                    //   className="text-[#5A8CFF] cursor-pointer"
+                    //   //   onClick={() => router.push(APP_LINKS.SIGNUP_HOME)}
+                    // >
+                    //   Sign up for free
+                    // </Button>
+                    // {/* <Image
+                    //   src={curve}
+                    //   alt=""
+                    //   width={100}
+                    //   height={100}
+                    //   className="mx-auto"
+                    // /> */}
                 </div>
               </div>
             </form>
