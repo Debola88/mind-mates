@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import logo from "@/assets/image/Group 169.svg";
 import Image from "next/image";
+import { APP_LINKS } from "@/constants/app-links";
+
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,35 +53,38 @@ export default function NavBar() {
 
           <div className="hidden md:flex items-center space-x-8 text-[#707176]">
             <Link
-              href="/"
+              href={APP_LINKS.HOME}
               className="hover:text-[#007299] transition-colors font-medium"
             >
               Home
               <span className="" />
             </Link>
             <Link
-              href="/services"
+              href={APP_LINKS.SERVICE}
               className="hover:text-[#007299] transition-colors font-medium"
             >
               Services
             </Link>
             <Link
-              href="/contact"
+              href="/"
               className="hover:text-[#007299] transition-colors font-medium"
             >
               Contact
             </Link>
             <Link
-              href="/about"
+              href={APP_LINKS.ABOUT}
               className=" hover:text-[#007299] transition-colors font-medium"
             >
               About Us
             </Link>
           </div>
           <div className="hidden md:flex">
+            <Link
+            href={APP_LINKS.SIGNUP_PAGE}>
             <Button className="bg-color rounded-full text-lg px-8 cursor-pointer hover:opacity-85 transition-all duration-200">
               Register
             </Button>
+            </Link>
           </div>
           <div className="md:hidden">
             <Button
