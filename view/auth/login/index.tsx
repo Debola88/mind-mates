@@ -7,7 +7,7 @@ import peace from "@/assets/image/Positive thinking-rafiki (1) 1.svg";
 export default function LoginPageView() {
   return (
     <div className="flex max-md:flex-col h-screen">
-      <div className="flex-1 relative w-full h-full max-md:hidden">
+      <div className="flex-1 w-full h-full max-md:hidden bg-[#F4FEFF]">
         <Image
           src={peace}
           alt=""
@@ -16,11 +16,11 @@ export default function LoginPageView() {
           className="object-cover w-full h-screen"
         />
       </div>
-      <div className="md:m-20 max-md:p-5 grid place-items-center flex-1">
-        <div className="md:w-3/4 h-full">
+      <div className="mx-auto max-md:p-5 flex items-center justify-center h-full w-full flex-1">
+        <div className="md:w-3/4 w-full">
           <h1 className="text-[#444B59] md:text-5xl text-3xl font-bold pb-5">
             Welcome back!
-            
+
           </h1>
           <div className="text-[#444B59] text-sm pb-3">
             Already have an Account. Log in
@@ -33,9 +33,9 @@ export default function LoginPageView() {
           <div className="p-0 mt-2">
             <form className="w-full space-y-6">
               <div className="space-y-2 text-[#202224]/80">
-                <Label>Usernme</Label>
+                <Label>Username</Label>
                 <Input
-                  className="bg-white"
+                  className="bg-white rounded-full h-12 border-[#4ED6DA]"
                   //   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
                   type="email"
@@ -49,7 +49,7 @@ export default function LoginPageView() {
                 <Label>Password</Label>
                 <Input
                   type="password"
-                  className="bg-white"
+                  className="bg-white rounded-full h-12 border-[#4ED6DA]"
                   //   onChange={(e) => setPassword(e.target.value)}
                   placeholder="*******"
                   //   value={password}
@@ -61,13 +61,14 @@ export default function LoginPageView() {
                 <Button
                   type="submit"
                   //   disabled={loading}
-                  className="bg-color text-white w-2/3 rounded-full hover:bg-[#C8EE44]/70"
+                  className="bg-color text-white w-2/3 text-lg font-semibold py-6 rounded-full hover:bg-[#C8EE44]/70"
                 >
                   {/* {loading ? "Loading..." : "Sign in"} */}
                   Log in
                 </Button>
-                <div className="flex justify-center mt-2 md:text-sm text-xs font-medium items-start">
-                  <p>Don&apos;t have an account?</p>
+                <div className="flex justify-center mt-4 md:text-sm text-xs font-medium items-start">
+                 <div className="border border-gray-400"></div> <p className="">or continue with</p><div className="border border-gray-400"></div> 
+                  </div>
                   <div className="-mt-2">
                     <Button
                       variant="link"
@@ -84,7 +85,6 @@ export default function LoginPageView() {
                       height={100}
                       className="mx-auto"
                     /> */}
-                  </div>
                 </div>
               </div>
             </form>
