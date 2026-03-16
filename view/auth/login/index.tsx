@@ -39,9 +39,8 @@ export default function LoginPageView() {
                 <Input
                   className="bg-white rounded-full h-12 border-[#4ED6DA]"
                   //   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email"
+                  placeholder="debola123@gmail.com"
                   type="email"
-                  placeholder= "debola123@gmail.com"
                   //   value={email}
                   required
                   //   disabled={loading}
